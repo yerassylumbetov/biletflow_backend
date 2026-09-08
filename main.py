@@ -32,7 +32,7 @@ class User(Base):
     hashed_password = Column(String)
     role = Column(String, default="attendee")
 
-Base.metadata.create_all(bind=engine)
+#Base.metadata.create_all(bind=engine)
 
 def get_db():
     db = SessionLocal()
